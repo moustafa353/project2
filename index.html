@@ -5,14 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <nav class="navbar">
-       <span class="nav-header"><h1>Movies</h1></span>
-       <span class="search-sp">
-        <input type="text" class="search" placeholder="Search"> <i class="icon fa fa-search"></i> 
-       </span>
+       <div class="navbar-left">
+           <div class="nav-header"><h1>Movies</h1></div>
+           <ul class="nav-menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#popular-movies">Popular Movies</a></li>
+               <li><a href="#trending-movies">Trending Movies</a></li>
+               <li><a href="#top-rated-movies">Top Rated Movies</a></li>
+           </ul>
+       </div>
+       <div class="navbar-right">
+           <div class="search-sp">
+               <input type="text" class="search" placeholder="Search"> <i class="icon fa fa-search"></i> 
+           </div>
+           <div class="user-menu">
+               <div class="user-avatar">U</div>
+           </div>
+       </div>
     </nav>
+
+    <section class="slider">
+       <span class="header"> <h1 class="slider-header">The Best To Watch</h1> </span>
+       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+  </div>
+</div>
+    </section>
+
+    <section  class="movies-section">
+        <h2 class="section-header">Popular Movies</h2>
+        <div class="movies-grid" id="popular-movies">
+         
+        </div>
+    </section>
+
+    <section  class="movies-section">
+        <h2 class="section-header">Trending Now</h2>
+        <div class="movies-grid" id="trending-movies">
+         
+        </div>
+    </section>
+
+    <section class="movies-section">
+        <h2 class="section-header">Top Rated</h2>
+        <div class="movies-grid" id="top-rated-movies">
+         
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>
