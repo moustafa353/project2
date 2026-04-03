@@ -21,39 +21,57 @@
        </div>
        <div class="navbar-right">
            <div class="search-sp">
-               <input type="text" class="search" placeholder="Search"> <i class="icon fa fa-search"></i> 
+               <input type="text" id="search-input" class="search" placeholder="Search"> <i id="search-icon" class="icon fa fa-search"></i> 
            </div>
            <div class="user-menu">
                <div class="user-avatar">U</div>
            </div>
        </div>
     </nav>
-
+    
     <section class="slider">
        <span class="header"> <h1 class="slider-header">The Best To Watch</h1> </span>
-       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
+       <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
   </div>
+  <div id="carousel" class="carousel-inner">
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 </div>
     </section>
 
-    <section  class="movies-section">
+    <section id="popular-section"  class="movies-section">
         <h2 class="section-header">Popular Movies</h2>
         <div class="movies-grid" id="popular-movies">
          
         </div>
     </section>
 
-    <section  class="movies-section">
+    <section id="trending-section" class="movies-section">
         <h2 class="section-header">Trending Now</h2>
         <div class="movies-grid" id="trending-movies">
          
         </div>
     </section>
 
-    <section class="movies-section">
+    <section id="top-rated-section" class="movies-section">
         <h2 class="section-header">Top Rated</h2>
         <div class="movies-grid" id="top-rated-movies">
+         
+        </div>
+    </section>
+
+    <section id="search-section" class="search-section movies-section">
+        <h2 class="section-header">Search Results for <span id="search-query"></span></h2>
+        <div class="search movies-grid" id="search-results">
          
         </div>
     </section>
